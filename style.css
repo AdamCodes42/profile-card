@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+/*Colors*/
+/* Primary */
+
+--Dark_cyan: hsl(185, 75%, 39%);
+--Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+--Dark_grayish_blue: hsl(227, 10%, 46%);
+
+/* Neutral */
+--Dark_gray: hsl(0, 0%, 59%);
+}
+html,body{
+    background:var(--Dark_cyan);
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+.container{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+}
+/*Background*/
+.bg-pattern-top{
+    width:700px;
+    min-width:300px;
+    position:fixed;
+    top:-300px;
+    left:-100px;
+}
+.bg-pattern-bottom{
+    width:900px;
+    min-width:300px;
+    position:fixed;
+    right:-200px;
+    bottom:-590px;
+}
+
+/* Card Styling*/
+.card{
+    font-family:'Kumbh Sans';
+    width:350px;
+    min-width:350px;
+    border-radius: 10px;
+    background-color: #ffff;
+    z-index: 1;
+}
+
+/* section 1 styling */
+.section-1{
+    height:120px;
+    background:url('./images/bg-pattern-card.svg');
+    border-radius: 10px 10px 0px 0px;
+}
+.profile-img{
+    border:5px solid #ffff;
+    border-radius: 50%;
+    position: relative;
+    left:35%;
+    top:50px;
+}
+
+/* section 2 styling */
+.section-2{
+    height:140px;
+    background-color:#ffff;
+    text-align: center;
+    border-bottom: 0.5px solid  hsla(0, 0%, 59%, 0.3);
+}
+h1,p{
+    position: relative;
+    top:50px;
+}
+p{
+    color:var(--Dark_grayish_blue);
+}
+
+/* section 3 styling */
+.section-3{
+    background-color:#ffff;
+    height:60px;
+    border-radius: 0px 0px 10px 10px;
+}
+ul li{
+    display: inline-block;
+    text-align: center;
+    padding:10px;
+    font-weight:700;
+    margin-left:10px;
+}
+span{
+    font-weight: 400;
+    color: var(--Dark_grayish_blue);
+    font-size: small;
+    letter-spacing:1px;
+}
+
+/* responsive block  */
+@media(max-width:375px){
+    .card{
+        width:300px;
+        min-width: 300px;
+    }
+    .bg-pattern-top{
+        width:400px;    
+        position:fixed;
+        top:-190px;
+        left:-230px;
+    }
+    .bg-pattern-bottom{
+        width:450px;
+        position:fixed;
+        bottom:-200px;
+        right:-320px;
+    }
+    ul li{
+        padding:0px;
+    }
+}
+
+/* links  */
+.attribution {
+    font-size: 11px; 
+    text-align:center;
+    position: relative;
+    bottom:15px;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
