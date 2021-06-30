@@ -73,7 +73,7 @@ html,body{
     text-align: center;
     border-bottom: 0.5px solid  hsla(0, 0%, 59%, 0.3);
 }
-h1,p{
+h2,p{
     position: relative;
     top:50px;
 }
